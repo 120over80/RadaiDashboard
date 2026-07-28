@@ -268,18 +268,19 @@ footer b{color:#C7D4E6;}
 </div>
 
 <footer>
-  <b>Rad AI</b> &middot; Paid Media Performance Dashboard &middot; Data as of Jul 21, 2026 &middot; LinkedIn data: daily, Mar 1&ndash;Jul 21 2026 &middot; Google data: lifetime totals (All time export)
+  <b>Rad AI</b> &middot; Paid Media Performance Dashboard &middot; <span id="footerText"></span>
 </footer>
 
 <script>
 const DATA = {
   "meta": {
     "linkedinDateMin": "2026-01-01",
-    "linkedinDateMax": "2026-07-21",
-    "asOf": "2026-07-21",
+    "linkedinDateMax": "2026-07-28",
+    "asOf": "2026-07-28",
     "googleDateMin": "2026-01-01",
-    "googleDateMax": "2026-07-21",
-    "googleRealDataStart": "2026-05-01"
+    "googleDateMax": "2026-07-28",
+    "googleRealDataStart": "2026-05-01",
+    "linkedinRealDataStart": "2026-03-01"
   },
   "linkedin": {
     "daily": [
@@ -290,10 +291,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-02",
@@ -302,10 +303,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-03",
@@ -314,10 +315,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-04",
@@ -326,10 +327,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-05",
@@ -338,10 +339,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-06",
@@ -350,10 +351,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-07",
@@ -362,10 +363,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-08",
@@ -374,10 +375,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-09",
@@ -386,10 +387,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-10",
@@ -398,10 +399,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-11",
@@ -410,10 +411,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-12",
@@ -422,10 +423,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-13",
@@ -434,10 +435,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-14",
@@ -446,10 +447,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-15",
@@ -458,10 +459,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-16",
@@ -470,10 +471,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-17",
@@ -482,10 +483,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-18",
@@ -494,10 +495,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-19",
@@ -506,10 +507,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-20",
@@ -518,10 +519,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-21",
@@ -530,10 +531,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-22",
@@ -542,10 +543,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-23",
@@ -554,10 +555,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-24",
@@ -566,10 +567,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-25",
@@ -578,10 +579,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-26",
@@ -590,10 +591,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-27",
@@ -602,10 +603,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-28",
@@ -614,10 +615,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-29",
@@ -626,10 +627,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-30",
@@ -638,10 +639,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-31",
@@ -650,10 +651,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-01",
@@ -662,10 +663,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-02",
@@ -674,10 +675,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-03",
@@ -686,10 +687,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-04",
@@ -698,10 +699,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-05",
@@ -710,10 +711,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-06",
@@ -722,10 +723,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-07",
@@ -734,10 +735,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-08",
@@ -746,10 +747,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-09",
@@ -758,10 +759,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-10",
@@ -770,10 +771,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-11",
@@ -782,10 +783,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-12",
@@ -794,10 +795,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-13",
@@ -806,10 +807,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-14",
@@ -818,10 +819,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-15",
@@ -830,10 +831,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-16",
@@ -842,10 +843,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-17",
@@ -854,10 +855,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-18",
@@ -866,10 +867,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-19",
@@ -878,10 +879,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-20",
@@ -890,10 +891,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-21",
@@ -902,10 +903,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-22",
@@ -914,10 +915,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-23",
@@ -926,10 +927,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-24",
@@ -938,10 +939,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-25",
@@ -950,10 +951,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-26",
@@ -962,10 +963,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-27",
@@ -974,10 +975,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-28",
@@ -986,10 +987,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-01",
@@ -1001,7 +1002,7 @@ const DATA = {
         "ctr": 0.72,
         "cpLPClick": 39.61,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-02",
@@ -1013,7 +1014,7 @@ const DATA = {
         "ctr": 0.83,
         "cpLPClick": 24.96,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-03",
@@ -1025,7 +1026,7 @@ const DATA = {
         "ctr": 0.4,
         "cpLPClick": 70.36,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-04",
@@ -1037,7 +1038,7 @@ const DATA = {
         "ctr": 1.07,
         "cpLPClick": 31.55,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-05",
@@ -1049,7 +1050,7 @@ const DATA = {
         "ctr": 0.84,
         "cpLPClick": 39.77,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-06",
@@ -1061,7 +1062,7 @@ const DATA = {
         "ctr": 1.37,
         "cpLPClick": 17.13,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-07",
@@ -1071,9 +1072,9 @@ const DATA = {
         "clicks": 2,
         "clicksToLP": 2,
         "ctr": 0.52,
-        "cpLPClick": 55.11,
+        "cpLPClick": 55.12,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-08",
@@ -1085,7 +1086,7 @@ const DATA = {
         "ctr": 1.06,
         "cpLPClick": 23.23,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-09",
@@ -1095,9 +1096,9 @@ const DATA = {
         "clicks": 0,
         "clicksToLP": 0,
         "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "cpLPClick": 0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-10",
@@ -1109,7 +1110,7 @@ const DATA = {
         "ctr": 0.48,
         "cpLPClick": 17.19,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-11",
@@ -1121,7 +1122,7 @@ const DATA = {
         "ctr": 1.22,
         "cpLPClick": 5.74,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-12",
@@ -1133,7 +1134,7 @@ const DATA = {
         "ctr": 1.58,
         "cpLPClick": 4.43,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-13",
@@ -1145,7 +1146,7 @@ const DATA = {
         "ctr": 0.87,
         "cpLPClick": 13.68,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-14",
@@ -1157,7 +1158,7 @@ const DATA = {
         "ctr": 1.24,
         "cpLPClick": 4.04,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-15",
@@ -1169,7 +1170,7 @@ const DATA = {
         "ctr": 2.02,
         "cpLPClick": 3.83,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-16",
@@ -1193,7 +1194,7 @@ const DATA = {
         "ctr": 1.81,
         "cpLPClick": 5.56,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-18",
@@ -1205,7 +1206,7 @@ const DATA = {
         "ctr": 1.18,
         "cpLPClick": 26.14,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-19",
@@ -1217,7 +1218,7 @@ const DATA = {
         "ctr": 0.58,
         "cpLPClick": 52.84,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-20",
@@ -1229,7 +1230,7 @@ const DATA = {
         "ctr": 0.9,
         "cpLPClick": 40.78,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-21",
@@ -1241,7 +1242,7 @@ const DATA = {
         "ctr": 0.52,
         "cpLPClick": 59.44,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-22",
@@ -1253,7 +1254,7 @@ const DATA = {
         "ctr": 0.35,
         "cpLPClick": 85.26,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-23",
@@ -1265,7 +1266,7 @@ const DATA = {
         "ctr": 0.4,
         "cpLPClick": 54.75,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-24",
@@ -1277,7 +1278,7 @@ const DATA = {
         "ctr": 0.29,
         "cpLPClick": 86.25,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-25",
@@ -1289,7 +1290,7 @@ const DATA = {
         "ctr": 0.62,
         "cpLPClick": 53.46,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-26",
@@ -1301,7 +1302,7 @@ const DATA = {
         "ctr": 1.38,
         "cpLPClick": 19.86,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-27",
@@ -1313,7 +1314,7 @@ const DATA = {
         "ctr": 0.82,
         "cpLPClick": 33.64,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-28",
@@ -1325,7 +1326,7 @@ const DATA = {
         "ctr": 0.58,
         "cpLPClick": 37.44,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-29",
@@ -1337,7 +1338,7 @@ const DATA = {
         "ctr": 0.85,
         "cpLPClick": 35.81,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-30",
@@ -1349,7 +1350,7 @@ const DATA = {
         "ctr": 0.5,
         "cpLPClick": 39.67,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-31",
@@ -1361,7 +1362,7 @@ const DATA = {
         "ctr": 0.56,
         "cpLPClick": 29.73,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-01",
@@ -1373,7 +1374,7 @@ const DATA = {
         "ctr": 0.2,
         "cpLPClick": 22.92,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-02",
@@ -1385,7 +1386,7 @@ const DATA = {
         "ctr": 0.09,
         "cpLPClick": 147.31,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-03",
@@ -1397,7 +1398,7 @@ const DATA = {
         "ctr": 0.14,
         "cpLPClick": 92.89,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-04",
@@ -1409,7 +1410,7 @@ const DATA = {
         "ctr": 0.6,
         "cpLPClick": 35.23,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-05",
@@ -1421,7 +1422,7 @@ const DATA = {
         "ctr": 0.67,
         "cpLPClick": 39.1,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-06",
@@ -1433,7 +1434,7 @@ const DATA = {
         "ctr": 0.35,
         "cpLPClick": 112.62,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-07",
@@ -1457,7 +1458,7 @@ const DATA = {
         "ctr": 0.37,
         "cpLPClick": 33.08,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-09",
@@ -1469,7 +1470,7 @@ const DATA = {
         "ctr": 0.64,
         "cpLPClick": 18.6,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-10",
@@ -1481,7 +1482,7 @@ const DATA = {
         "ctr": 0.95,
         "cpLPClick": 14.41,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-11",
@@ -1493,7 +1494,7 @@ const DATA = {
         "ctr": 0.81,
         "cpLPClick": 21.44,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-12",
@@ -1505,7 +1506,7 @@ const DATA = {
         "ctr": 1.28,
         "cpLPClick": 13.55,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-13",
@@ -1517,7 +1518,7 @@ const DATA = {
         "ctr": 0.57,
         "cpLPClick": 26.54,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-14",
@@ -1529,7 +1530,7 @@ const DATA = {
         "ctr": 0.72,
         "cpLPClick": 24.39,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-15",
@@ -1553,7 +1554,7 @@ const DATA = {
         "ctr": 0.32,
         "cpLPClick": 52.52,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-17",
@@ -1565,7 +1566,7 @@ const DATA = {
         "ctr": 0.81,
         "cpLPClick": 19.87,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-18",
@@ -1577,7 +1578,7 @@ const DATA = {
         "ctr": 0.72,
         "cpLPClick": 23.29,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-19",
@@ -1589,7 +1590,7 @@ const DATA = {
         "ctr": 0.42,
         "cpLPClick": 36.66,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-20",
@@ -1601,7 +1602,7 @@ const DATA = {
         "ctr": 0.6,
         "cpLPClick": 25.41,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-21",
@@ -1625,7 +1626,7 @@ const DATA = {
         "ctr": 0.95,
         "cpLPClick": 15.21,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-23",
@@ -1637,7 +1638,7 @@ const DATA = {
         "ctr": 0.72,
         "cpLPClick": 21.23,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-24",
@@ -1649,7 +1650,7 @@ const DATA = {
         "ctr": 0.5,
         "cpLPClick": 26.27,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-25",
@@ -1661,7 +1662,7 @@ const DATA = {
         "ctr": 0.89,
         "cpLPClick": 16.9,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-26",
@@ -1673,7 +1674,7 @@ const DATA = {
         "ctr": 0.78,
         "cpLPClick": 20.71,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-27",
@@ -1685,7 +1686,7 @@ const DATA = {
         "ctr": 0.66,
         "cpLPClick": 21.35,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-28",
@@ -1697,7 +1698,7 @@ const DATA = {
         "ctr": 0.67,
         "cpLPClick": 25.41,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-29",
@@ -1709,7 +1710,7 @@ const DATA = {
         "ctr": 1.16,
         "cpLPClick": 13.1,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-30",
@@ -1721,7 +1722,7 @@ const DATA = {
         "ctr": 0.89,
         "cpLPClick": 18.49,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-01",
@@ -1733,7 +1734,7 @@ const DATA = {
         "ctr": 0.13,
         "cpLPClick": 117.87,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-02",
@@ -1745,7 +1746,7 @@ const DATA = {
         "ctr": 0.83,
         "cpLPClick": 17.72,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-03",
@@ -1757,7 +1758,7 @@ const DATA = {
         "ctr": 0.56,
         "cpLPClick": 27.47,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-04",
@@ -1769,7 +1770,7 @@ const DATA = {
         "ctr": 0.54,
         "cpLPClick": 47.62,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-05",
@@ -1781,7 +1782,7 @@ const DATA = {
         "ctr": 0.71,
         "cpLPClick": 25.78,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-06",
@@ -1793,7 +1794,7 @@ const DATA = {
         "ctr": 0.4,
         "cpLPClick": 40.15,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-07",
@@ -1805,7 +1806,7 @@ const DATA = {
         "ctr": 1.06,
         "cpLPClick": 22.33,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-08",
@@ -1817,7 +1818,7 @@ const DATA = {
         "ctr": 0.42,
         "cpLPClick": 37.63,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-09",
@@ -1829,7 +1830,7 @@ const DATA = {
         "ctr": 1.05,
         "cpLPClick": 16.15,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-10",
@@ -1841,7 +1842,7 @@ const DATA = {
         "ctr": 0.71,
         "cpLPClick": 26.63,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-11",
@@ -1853,7 +1854,7 @@ const DATA = {
         "ctr": 0.52,
         "cpLPClick": 37.27,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-12",
@@ -1865,7 +1866,7 @@ const DATA = {
         "ctr": 0.27,
         "cpLPClick": 23.05,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-13",
@@ -1877,7 +1878,7 @@ const DATA = {
         "ctr": 0.31,
         "cpLPClick": 22.19,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-14",
@@ -1889,7 +1890,7 @@ const DATA = {
         "ctr": 0.52,
         "cpLPClick": 21.85,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-15",
@@ -1901,7 +1902,7 @@ const DATA = {
         "ctr": 0.41,
         "cpLPClick": 23.79,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-16",
@@ -1913,7 +1914,7 @@ const DATA = {
         "ctr": 0.24,
         "cpLPClick": 44.03,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-17",
@@ -1925,7 +1926,7 @@ const DATA = {
         "ctr": 0.24,
         "cpLPClick": 55.1,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-18",
@@ -1937,7 +1938,7 @@ const DATA = {
         "ctr": 0.34,
         "cpLPClick": 31.06,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-19",
@@ -1949,7 +1950,7 @@ const DATA = {
         "ctr": 0.74,
         "cpLPClick": 14.13,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-20",
@@ -1961,7 +1962,7 @@ const DATA = {
         "ctr": 0.96,
         "cpLPClick": 25.52,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-21",
@@ -1973,7 +1974,7 @@ const DATA = {
         "ctr": 2.55,
         "cpLPClick": 23.58,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-22",
@@ -1985,7 +1986,7 @@ const DATA = {
         "ctr": 1.31,
         "cpLPClick": 78.21,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-23",
@@ -1997,7 +1998,7 @@ const DATA = {
         "ctr": 1.15,
         "cpLPClick": 26.95,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-24",
@@ -2009,7 +2010,7 @@ const DATA = {
         "ctr": 2.76,
         "cpLPClick": 25.21,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-25",
@@ -2021,7 +2022,7 @@ const DATA = {
         "ctr": 3.2,
         "cpLPClick": 16.52,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-26",
@@ -2033,7 +2034,7 @@ const DATA = {
         "ctr": 2.48,
         "cpLPClick": 28.56,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-27",
@@ -2045,7 +2046,7 @@ const DATA = {
         "ctr": 2.14,
         "cpLPClick": 67.42,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-28",
@@ -2057,7 +2058,7 @@ const DATA = {
         "ctr": 0.48,
         "cpLPClick": 68.89,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-29",
@@ -2069,7 +2070,7 @@ const DATA = {
         "ctr": 1.25,
         "cpLPClick": 28.94,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-30",
@@ -2081,7 +2082,7 @@ const DATA = {
         "ctr": 0.73,
         "cpLPClick": 54.92,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-31",
@@ -2093,7 +2094,7 @@ const DATA = {
         "ctr": 0.77,
         "cpLPClick": 54.03,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-01",
@@ -2105,7 +2106,7 @@ const DATA = {
         "ctr": 0.51,
         "cpLPClick": 59.55,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-02",
@@ -2117,7 +2118,7 @@ const DATA = {
         "ctr": 0.58,
         "cpLPClick": 78.34,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-03",
@@ -2129,7 +2130,7 @@ const DATA = {
         "ctr": 0.86,
         "cpLPClick": 36.96,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-04",
@@ -2141,7 +2142,7 @@ const DATA = {
         "ctr": 0.68,
         "cpLPClick": 57.5,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-05",
@@ -2153,7 +2154,7 @@ const DATA = {
         "ctr": 0.48,
         "cpLPClick": 68.5,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-06",
@@ -2165,7 +2166,7 @@ const DATA = {
         "ctr": 0.7,
         "cpLPClick": 53.59,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-07",
@@ -2177,7 +2178,7 @@ const DATA = {
         "ctr": 0.4,
         "cpLPClick": 66.55,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-08",
@@ -2189,7 +2190,7 @@ const DATA = {
         "ctr": 0.6,
         "cpLPClick": 65.51,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-09",
@@ -2201,7 +2202,7 @@ const DATA = {
         "ctr": 0.6,
         "cpLPClick": 34.98,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-10",
@@ -2213,7 +2214,7 @@ const DATA = {
         "ctr": 0.36,
         "cpLPClick": 52.43,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-11",
@@ -2225,7 +2226,7 @@ const DATA = {
         "ctr": 0.46,
         "cpLPClick": 41.41,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-12",
@@ -2237,7 +2238,7 @@ const DATA = {
         "ctr": 1.23,
         "cpLPClick": 16.05,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-13",
@@ -2249,7 +2250,7 @@ const DATA = {
         "ctr": 0.89,
         "cpLPClick": 24.29,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-14",
@@ -2261,7 +2262,7 @@ const DATA = {
         "ctr": 0.19,
         "cpLPClick": 76.98,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-15",
@@ -2273,7 +2274,7 @@ const DATA = {
         "ctr": 0.82,
         "cpLPClick": 30.24,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-16",
@@ -2285,7 +2286,7 @@ const DATA = {
         "ctr": 0.4,
         "cpLPClick": 63.31,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-17",
@@ -2297,7 +2298,7 @@ const DATA = {
         "ctr": 0.68,
         "cpLPClick": 26.91,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-18",
@@ -2309,7 +2310,7 @@ const DATA = {
         "ctr": 0.18,
         "cpLPClick": 101.23,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-19",
@@ -2321,7 +2322,7 @@ const DATA = {
         "ctr": 0.39,
         "cpLPClick": 42.67,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-20",
@@ -2333,7 +2334,7 @@ const DATA = {
         "ctr": 0.33,
         "cpLPClick": 52.77,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-21",
@@ -2345,7 +2346,7 @@ const DATA = {
         "ctr": 0.94,
         "cpLPClick": 18.87,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-22",
@@ -2357,7 +2358,7 @@ const DATA = {
         "ctr": 0.27,
         "cpLPClick": 36.74,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-23",
@@ -2369,7 +2370,7 @@ const DATA = {
         "ctr": 0.3,
         "cpLPClick": 44.36,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-24",
@@ -2381,7 +2382,7 @@ const DATA = {
         "ctr": 0.6,
         "cpLPClick": 45.26,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-25",
@@ -2393,7 +2394,7 @@ const DATA = {
         "ctr": 0.2,
         "cpLPClick": 138.73,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-26",
@@ -2405,7 +2406,7 @@ const DATA = {
         "ctr": 0.6,
         "cpLPClick": 58.89,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-27",
@@ -2417,7 +2418,7 @@ const DATA = {
         "ctr": 1.1,
         "cpLPClick": 48.11,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-28",
@@ -2429,7 +2430,7 @@ const DATA = {
         "ctr": 0.3,
         "cpLPClick": 214.52,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-29",
@@ -2441,7 +2442,7 @@ const DATA = {
         "ctr": 1.08,
         "cpLPClick": 50.49,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-30",
@@ -2453,7 +2454,7 @@ const DATA = {
         "ctr": 0.68,
         "cpLPClick": 59.56,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-01",
@@ -2465,7 +2466,7 @@ const DATA = {
         "ctr": 0.33,
         "cpLPClick": 106.03,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-02",
@@ -2477,7 +2478,7 @@ const DATA = {
         "ctr": 0.84,
         "cpLPClick": 28.96,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-03",
@@ -2489,7 +2490,7 @@ const DATA = {
         "ctr": 0.4,
         "cpLPClick": 76.47,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-04",
@@ -2501,7 +2502,7 @@ const DATA = {
         "ctr": 0.86,
         "cpLPClick": 49.14,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-05",
@@ -2513,7 +2514,7 @@ const DATA = {
         "ctr": 0.18,
         "cpLPClick": 223.17,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-06",
@@ -2525,7 +2526,7 @@ const DATA = {
         "ctr": 0.76,
         "cpLPClick": 37.0,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-07",
@@ -2537,7 +2538,7 @@ const DATA = {
         "ctr": 0.36,
         "cpLPClick": 81.27,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-08",
@@ -2549,7 +2550,7 @@ const DATA = {
         "ctr": 1.17,
         "cpLPClick": 33.96,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-09",
@@ -2561,7 +2562,7 @@ const DATA = {
         "ctr": 0.25,
         "cpLPClick": 106.18,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-10",
@@ -2573,7 +2574,7 @@ const DATA = {
         "ctr": 1.15,
         "cpLPClick": 21.54,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-11",
@@ -2585,7 +2586,7 @@ const DATA = {
         "ctr": 0.38,
         "cpLPClick": 78.84,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-12",
@@ -2597,7 +2598,7 @@ const DATA = {
         "ctr": 0.81,
         "cpLPClick": 43.37,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-13",
@@ -2609,7 +2610,7 @@ const DATA = {
         "ctr": 0.5,
         "cpLPClick": 75.2,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-14",
@@ -2621,7 +2622,7 @@ const DATA = {
         "ctr": 0.58,
         "cpLPClick": 45.85,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-15",
@@ -2633,7 +2634,7 @@ const DATA = {
         "ctr": 0.33,
         "cpLPClick": 120.5,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-16",
@@ -2657,7 +2658,7 @@ const DATA = {
         "ctr": 0.58,
         "cpLPClick": 49.06,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-18",
@@ -2669,7 +2670,7 @@ const DATA = {
         "ctr": 0.76,
         "cpLPClick": 60.4,
         "conversions": 0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-19",
@@ -2680,8 +2681,8 @@ const DATA = {
         "clicksToLP": 3,
         "ctr": 0.64,
         "cpLPClick": 76.19,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-07-20",
@@ -2692,20 +2693,104 @@ const DATA = {
         "clicksToLP": 1,
         "ctr": 0.16,
         "cpLPClick": 293.6,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-07-21",
         "label": "Jul 21",
-        "spend": 175.93,
-        "impressions": 530,
+        "spend": 318.49,
+        "impressions": 816,
+        "clicks": 5,
+        "clicksToLP": 5,
+        "ctr": 0.61,
+        "cpLPClick": 63.7,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-22",
+        "label": "Jul 22",
+        "spend": 286.93,
+        "impressions": 935,
+        "clicks": 7,
+        "clicksToLP": 7,
+        "ctr": 0.75,
+        "cpLPClick": 40.99,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-23",
+        "label": "Jul 23",
+        "spend": 304.19,
+        "impressions": 834,
+        "clicks": 8,
+        "clicksToLP": 7,
+        "ctr": 0.96,
+        "cpLPClick": 43.46,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-24",
+        "label": "Jul 24",
+        "spend": 300.04,
+        "impressions": 718,
         "clicks": 2,
         "clicksToLP": 2,
-        "ctr": 0.38,
-        "cpLPClick": 87.97,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "ctr": 0.28,
+        "cpLPClick": 150.02,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-25",
+        "label": "Jul 25",
+        "spend": 219.02,
+        "impressions": 604,
+        "clicks": 4,
+        "clicksToLP": 4,
+        "ctr": 0.66,
+        "cpLPClick": 54.76,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-26",
+        "label": "Jul 26",
+        "spend": 217.67,
+        "impressions": 440,
+        "clicks": 3,
+        "clicksToLP": 2,
+        "ctr": 0.68,
+        "cpLPClick": 108.83,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-27",
+        "label": "Jul 27",
+        "spend": 258.16,
+        "impressions": 736,
+        "clicks": 2,
+        "clicksToLP": 2,
+        "ctr": 0.27,
+        "cpLPClick": 129.08,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-28",
+        "label": "Jul 28",
+        "spend": 184.24,
+        "impressions": 541,
+        "clicks": 5,
+        "clicksToLP": 4,
+        "ctr": 0.92,
+        "cpLPClick": 46.06,
+        "conversions": 0.0,
+        "costPerConv": 0
       }
     ],
     "weekly": [
@@ -2716,10 +2801,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "ctr": 0,
+        "cpLPClick": 0,
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-01-05",
@@ -2728,10 +2813,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "ctr": 0,
+        "cpLPClick": 0,
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-01-12",
@@ -2740,10 +2825,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "ctr": 0,
+        "cpLPClick": 0,
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-01-19",
@@ -2752,10 +2837,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "ctr": 0,
+        "cpLPClick": 0,
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-01-26",
@@ -2764,10 +2849,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "ctr": 0,
+        "cpLPClick": 0,
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-02-02",
@@ -2776,10 +2861,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "ctr": 0,
+        "cpLPClick": 0,
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-02-09",
@@ -2788,10 +2873,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "ctr": 0,
+        "cpLPClick": 0,
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-02-16",
@@ -2800,10 +2885,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "ctr": 0,
+        "cpLPClick": 0,
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-02-23",
@@ -2814,8 +2899,8 @@ const DATA = {
         "clicksToLP": 6,
         "ctr": 0.72,
         "cpLPClick": 39.61,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-03-02",
@@ -2826,8 +2911,8 @@ const DATA = {
         "clicksToLP": 52,
         "ctr": 0.84,
         "cpLPClick": 32.52,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-03-09",
@@ -2838,8 +2923,8 @@ const DATA = {
         "clicksToLP": 314,
         "ctr": 1.22,
         "cpLPClick": 6.62,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-03-16",
@@ -2850,7 +2935,7 @@ const DATA = {
         "clicksToLP": 194,
         "ctr": 1.4,
         "cpLPClick": 12.74,
-        "conversions": 2,
+        "conversions": 2.0,
         "costPerConv": 1235.85
       },
       {
@@ -2862,8 +2947,8 @@ const DATA = {
         "clicksToLP": 61,
         "ctr": 0.7,
         "cpLPClick": 38.13,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-03-30",
@@ -2874,8 +2959,8 @@ const DATA = {
         "clicksToLP": 51,
         "ctr": 0.29,
         "cpLPClick": 40.1,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-04-06",
@@ -2886,7 +2971,7 @@ const DATA = {
         "clicksToLP": 58,
         "ctr": 0.7,
         "cpLPClick": 25.13,
-        "conversions": 1,
+        "conversions": 1.0,
         "costPerConv": 1457.34
       },
       {
@@ -2898,7 +2983,7 @@ const DATA = {
         "clicksToLP": 57,
         "ctr": 0.59,
         "cpLPClick": 27.77,
-        "conversions": 1,
+        "conversions": 1.0,
         "costPerConv": 1582.69
       },
       {
@@ -2910,7 +2995,7 @@ const DATA = {
         "clicksToLP": 78,
         "ctr": 0.73,
         "cpLPClick": 20.38,
-        "conversions": 1,
+        "conversions": 1.0,
         "costPerConv": 1589.34
       },
       {
@@ -2922,8 +3007,8 @@ const DATA = {
         "clicksToLP": 64,
         "ctr": 0.73,
         "cpLPClick": 21.22,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-05-04",
@@ -2934,8 +3019,8 @@ const DATA = {
         "clicksToLP": 54,
         "ctr": 0.69,
         "cpLPClick": 27.37,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-05-11",
@@ -2946,8 +3031,8 @@ const DATA = {
         "clicksToLP": 57,
         "ctr": 0.34,
         "cpLPClick": 28.1,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-05-18",
@@ -2958,8 +3043,8 @@ const DATA = {
         "clicksToLP": 53,
         "ctr": 1.46,
         "cpLPClick": 26.86,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-05-25",
@@ -2970,8 +3055,8 @@ const DATA = {
         "clicksToLP": 61,
         "ctr": 1.84,
         "cpLPClick": 41.5,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-06-01",
@@ -2982,8 +3067,8 @@ const DATA = {
         "clicksToLP": 42,
         "ctr": 0.61,
         "cpLPClick": 57.0,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-06-08",
@@ -2994,8 +3079,8 @@ const DATA = {
         "clicksToLP": 35,
         "ctr": 0.61,
         "cpLPClick": 36.36,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-06-15",
@@ -3006,8 +3091,8 @@ const DATA = {
         "clicksToLP": 32,
         "ctr": 0.51,
         "cpLPClick": 39.26,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-06-22",
@@ -3018,8 +3103,8 @@ const DATA = {
         "clicksToLP": 63,
         "ctr": 0.47,
         "cpLPClick": 65.13,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-06-29",
@@ -3030,8 +3115,8 @@ const DATA = {
         "clicksToLP": 51,
         "ctr": 0.68,
         "cpLPClick": 56.12,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-07-06",
@@ -3042,8 +3127,8 @@ const DATA = {
         "clicksToLP": 47,
         "ctr": 0.69,
         "cpLPClick": 43.28,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-07-13",
@@ -3054,20 +3139,32 @@ const DATA = {
         "clicksToLP": 36,
         "ctr": 0.61,
         "cpLPClick": 57.71,
-        "conversions": 1,
+        "conversions": 1.0,
         "costPerConv": 2077.52
       },
       {
         "date": "2026-07-20",
         "label": "Jul 20",
-        "spend": 469.53,
-        "impressions": 1145,
-        "clicks": 3,
-        "clicksToLP": 3,
-        "ctr": 0.26,
-        "cpLPClick": 156.51,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "spend": 1939.94,
+        "impressions": 4962,
+        "clicks": 30,
+        "clicksToLP": 28,
+        "ctr": 0.6,
+        "cpLPClick": 69.28,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-27",
+        "label": "Jul 27",
+        "spend": 442.4,
+        "impressions": 1277,
+        "clicks": 7,
+        "clicksToLP": 6,
+        "ctr": 0.55,
+        "cpLPClick": 73.73,
+        "conversions": 0.0,
+        "costPerConv": 0
       }
     ],
     "monthly": [
@@ -3078,10 +3175,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "ctr": 0,
+        "cpLPClick": 0,
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-02-01",
@@ -3090,10 +3187,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "ctr": 0,
+        "cpLPClick": 0,
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-03-01",
@@ -3104,7 +3201,7 @@ const DATA = {
         "clicksToLP": 651,
         "ctr": 1.08,
         "cpLPClick": 14.77,
-        "conversions": 2,
+        "conversions": 2.0,
         "costPerConv": 4808.69
       },
       {
@@ -3116,7 +3213,7 @@ const DATA = {
         "clicksToLP": 263,
         "ctr": 0.53,
         "cpLPClick": 25.36,
-        "conversions": 3,
+        "conversions": 3.0,
         "costPerConv": 2223.1
       },
       {
@@ -3128,8 +3225,8 @@ const DATA = {
         "clicksToLP": 246,
         "ctr": 0.98,
         "cpLPClick": 30.83,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-06-01",
@@ -3140,20 +3237,20 @@ const DATA = {
         "clicksToLP": 198,
         "ctr": 0.57,
         "cpLPClick": 52.77,
-        "conversions": 0,
-        "costPerConv": 0.0
+        "conversions": 0.0,
+        "costPerConv": 0
       },
       {
         "date": "2026-07-01",
         "label": "Jul 2026",
-        "spend": 6021.57,
-        "impressions": 18378,
-        "clicks": 111,
-        "clicksToLP": 111,
-        "ctr": 0.6,
-        "cpLPClick": 54.25,
-        "conversions": 1,
-        "costPerConv": 6021.57
+        "spend": 7934.38,
+        "impressions": 23472,
+        "clicks": 145,
+        "clicksToLP": 142,
+        "ctr": 0.62,
+        "cpLPClick": 55.88,
+        "conversions": 1.0,
+        "costPerConv": 7934.38
       }
     ],
     "campaigns": [
@@ -3883,10 +3980,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-02",
@@ -3895,10 +3992,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-03",
@@ -3907,10 +4004,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-04",
@@ -3919,10 +4016,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-05",
@@ -3931,10 +4028,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-06",
@@ -3943,10 +4040,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-07",
@@ -3955,10 +4052,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-08",
@@ -3967,10 +4064,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-09",
@@ -3979,10 +4076,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-10",
@@ -3991,10 +4088,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-11",
@@ -4003,10 +4100,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-12",
@@ -4015,10 +4112,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-13",
@@ -4027,10 +4124,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-14",
@@ -4039,10 +4136,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-15",
@@ -4051,10 +4148,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-16",
@@ -4063,10 +4160,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-17",
@@ -4075,10 +4172,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-18",
@@ -4087,10 +4184,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-19",
@@ -4099,10 +4196,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-20",
@@ -4111,10 +4208,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-21",
@@ -4123,10 +4220,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-22",
@@ -4135,10 +4232,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-23",
@@ -4147,10 +4244,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-24",
@@ -4159,10 +4256,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-25",
@@ -4171,10 +4268,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-26",
@@ -4183,10 +4280,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-27",
@@ -4195,10 +4292,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-28",
@@ -4207,10 +4304,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-29",
@@ -4219,10 +4316,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-30",
@@ -4231,10 +4328,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-31",
@@ -4243,10 +4340,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-01",
@@ -4255,10 +4352,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-02",
@@ -4267,10 +4364,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-03",
@@ -4279,10 +4376,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-04",
@@ -4291,10 +4388,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-05",
@@ -4303,10 +4400,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-06",
@@ -4315,10 +4412,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-07",
@@ -4327,10 +4424,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-08",
@@ -4339,10 +4436,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-09",
@@ -4351,10 +4448,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-10",
@@ -4363,10 +4460,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-11",
@@ -4375,10 +4472,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-12",
@@ -4387,10 +4484,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-13",
@@ -4399,10 +4496,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-14",
@@ -4411,10 +4508,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-15",
@@ -4423,10 +4520,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-16",
@@ -4435,10 +4532,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-17",
@@ -4447,10 +4544,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-18",
@@ -4459,10 +4556,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-19",
@@ -4471,10 +4568,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-20",
@@ -4483,10 +4580,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-21",
@@ -4495,10 +4592,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-22",
@@ -4507,10 +4604,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-23",
@@ -4519,10 +4616,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-24",
@@ -4531,10 +4628,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-25",
@@ -4543,10 +4640,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-26",
@@ -4555,10 +4652,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-27",
@@ -4567,10 +4664,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-28",
@@ -4579,10 +4676,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-01",
@@ -4591,10 +4688,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-02",
@@ -4603,10 +4700,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-03",
@@ -4615,10 +4712,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-04",
@@ -4627,10 +4724,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-05",
@@ -4639,10 +4736,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-06",
@@ -4651,10 +4748,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-07",
@@ -4663,10 +4760,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-08",
@@ -4675,10 +4772,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-09",
@@ -4687,10 +4784,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-10",
@@ -4699,10 +4796,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-11",
@@ -4711,10 +4808,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-12",
@@ -4723,10 +4820,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-13",
@@ -4735,10 +4832,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-14",
@@ -4747,10 +4844,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-15",
@@ -4759,10 +4856,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-16",
@@ -4771,10 +4868,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-17",
@@ -4783,10 +4880,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-18",
@@ -4795,10 +4892,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-19",
@@ -4807,10 +4904,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-20",
@@ -4819,10 +4916,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-21",
@@ -4831,10 +4928,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-22",
@@ -4843,10 +4940,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-23",
@@ -4855,10 +4952,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-24",
@@ -4867,10 +4964,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-25",
@@ -4879,10 +4976,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-26",
@@ -4891,10 +4988,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-27",
@@ -4903,10 +5000,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-28",
@@ -4915,10 +5012,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-29",
@@ -4927,10 +5024,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-30",
@@ -4939,10 +5036,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-31",
@@ -4951,10 +5048,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-01",
@@ -4963,10 +5060,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-02",
@@ -4975,10 +5072,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-03",
@@ -4987,10 +5084,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-04",
@@ -4999,10 +5096,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-05",
@@ -5011,10 +5108,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-06",
@@ -5023,10 +5120,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-07",
@@ -5035,10 +5132,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-08",
@@ -5047,10 +5144,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-09",
@@ -5059,10 +5156,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-10",
@@ -5071,10 +5168,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-11",
@@ -5083,10 +5180,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-12",
@@ -5095,10 +5192,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-13",
@@ -5107,10 +5204,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-14",
@@ -5119,10 +5216,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-15",
@@ -5131,10 +5228,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-16",
@@ -5143,10 +5240,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-17",
@@ -5155,10 +5252,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-18",
@@ -5167,10 +5264,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-19",
@@ -5179,10 +5276,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-20",
@@ -5191,10 +5288,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-21",
@@ -5203,10 +5300,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-22",
@@ -5215,10 +5312,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-23",
@@ -5227,10 +5324,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-24",
@@ -5239,10 +5336,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-25",
@@ -5251,10 +5348,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-26",
@@ -5263,10 +5360,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-27",
@@ -5275,10 +5372,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-28",
@@ -5287,10 +5384,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-29",
@@ -5299,10 +5396,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-30",
@@ -5311,10 +5408,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-01",
@@ -5326,7 +5423,7 @@ const DATA = {
         "ctr": 13.45,
         "cpLPClick": 2.5,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-02",
@@ -5350,7 +5447,7 @@ const DATA = {
         "ctr": 9.09,
         "cpLPClick": 3.02,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-04",
@@ -5386,7 +5483,7 @@ const DATA = {
         "ctr": 18.41,
         "cpLPClick": 1.98,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-07",
@@ -5398,7 +5495,7 @@ const DATA = {
         "ctr": 15.85,
         "cpLPClick": 2.15,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-08",
@@ -5422,7 +5519,7 @@ const DATA = {
         "ctr": 11.11,
         "cpLPClick": 1.23,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-10",
@@ -5434,7 +5531,7 @@ const DATA = {
         "ctr": 16.88,
         "cpLPClick": 2.95,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-11",
@@ -5446,7 +5543,7 @@ const DATA = {
         "ctr": 8.17,
         "cpLPClick": 3.19,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-12",
@@ -5470,7 +5567,7 @@ const DATA = {
         "ctr": 12.57,
         "cpLPClick": 2.23,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-14",
@@ -5482,7 +5579,7 @@ const DATA = {
         "ctr": 11.17,
         "cpLPClick": 2.26,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-15",
@@ -5518,7 +5615,7 @@ const DATA = {
         "ctr": 7.6,
         "cpLPClick": 3.95,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-18",
@@ -5530,7 +5627,7 @@ const DATA = {
         "ctr": 25.22,
         "cpLPClick": 4.14,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-19",
@@ -5578,7 +5675,7 @@ const DATA = {
         "ctr": 13.53,
         "cpLPClick": 2.17,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-23",
@@ -5590,7 +5687,7 @@ const DATA = {
         "ctr": 11.78,
         "cpLPClick": 3.64,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-24",
@@ -5614,7 +5711,7 @@ const DATA = {
         "ctr": 7.79,
         "cpLPClick": 3.3,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-26",
@@ -5638,7 +5735,7 @@ const DATA = {
         "ctr": 13.39,
         "cpLPClick": 4.08,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-28",
@@ -5650,7 +5747,7 @@ const DATA = {
         "ctr": 12.5,
         "cpLPClick": 2.68,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-29",
@@ -5674,7 +5771,7 @@ const DATA = {
         "ctr": 10.24,
         "cpLPClick": 3.72,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-31",
@@ -5686,7 +5783,7 @@ const DATA = {
         "ctr": 12.29,
         "cpLPClick": 3.62,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-01",
@@ -5698,7 +5795,7 @@ const DATA = {
         "ctr": 18.31,
         "cpLPClick": 2.34,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-02",
@@ -5710,7 +5807,7 @@ const DATA = {
         "ctr": 12.76,
         "cpLPClick": 2.19,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-03",
@@ -5722,7 +5819,7 @@ const DATA = {
         "ctr": 10.64,
         "cpLPClick": 2.95,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-04",
@@ -5746,7 +5843,7 @@ const DATA = {
         "ctr": 9.68,
         "cpLPClick": 3.39,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-06",
@@ -5758,7 +5855,7 @@ const DATA = {
         "ctr": 12.31,
         "cpLPClick": 2.31,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-07",
@@ -5782,7 +5879,7 @@ const DATA = {
         "ctr": 14.4,
         "cpLPClick": 3.85,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-09",
@@ -5806,7 +5903,7 @@ const DATA = {
         "ctr": 24.06,
         "cpLPClick": 4.28,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-11",
@@ -5830,7 +5927,7 @@ const DATA = {
         "ctr": 16.58,
         "cpLPClick": 2.08,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-13",
@@ -5842,7 +5939,7 @@ const DATA = {
         "ctr": 7.5,
         "cpLPClick": 2.68,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-14",
@@ -5854,7 +5951,7 @@ const DATA = {
         "ctr": 4.68,
         "cpLPClick": 4.72,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-15",
@@ -5866,7 +5963,7 @@ const DATA = {
         "ctr": 16.94,
         "cpLPClick": 4.1,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-16",
@@ -5878,7 +5975,7 @@ const DATA = {
         "ctr": 12.07,
         "cpLPClick": 3.29,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-17",
@@ -5890,7 +5987,7 @@ const DATA = {
         "ctr": 15.13,
         "cpLPClick": 2.77,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-18",
@@ -5926,7 +6023,7 @@ const DATA = {
         "ctr": 13.64,
         "cpLPClick": 1.93,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-21",
@@ -5938,7 +6035,7 @@ const DATA = {
         "ctr": 7.35,
         "cpLPClick": 2.79,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-22",
@@ -5962,7 +6059,7 @@ const DATA = {
         "ctr": 12.74,
         "cpLPClick": 3.47,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-24",
@@ -5974,7 +6071,7 @@ const DATA = {
         "ctr": 15.83,
         "cpLPClick": 2.35,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-25",
@@ -5986,7 +6083,7 @@ const DATA = {
         "ctr": 11.64,
         "cpLPClick": 2.91,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-26",
@@ -6010,7 +6107,7 @@ const DATA = {
         "ctr": 7.49,
         "cpLPClick": 3.51,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-06-28",
@@ -6070,7 +6167,7 @@ const DATA = {
         "ctr": 23.36,
         "cpLPClick": 4.21,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-03",
@@ -6130,7 +6227,7 @@ const DATA = {
         "ctr": 16.58,
         "cpLPClick": 2.93,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-08",
@@ -6166,7 +6263,7 @@ const DATA = {
         "ctr": 14.43,
         "cpLPClick": 3.29,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-11",
@@ -6190,7 +6287,7 @@ const DATA = {
         "ctr": 18.39,
         "cpLPClick": 2.22,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-13",
@@ -6202,7 +6299,7 @@ const DATA = {
         "ctr": 11.7,
         "cpLPClick": 2.89,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-14",
@@ -6214,7 +6311,7 @@ const DATA = {
         "ctr": 11.88,
         "cpLPClick": 3.29,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-15",
@@ -6238,7 +6335,7 @@ const DATA = {
         "ctr": 17.86,
         "cpLPClick": 2.23,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-17",
@@ -6250,7 +6347,7 @@ const DATA = {
         "ctr": 16.76,
         "cpLPClick": 1.68,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-18",
@@ -6262,7 +6359,7 @@ const DATA = {
         "ctr": 14.93,
         "cpLPClick": 1.49,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-19",
@@ -6274,7 +6371,7 @@ const DATA = {
         "ctr": 12.24,
         "cpLPClick": 3.33,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-07-20",
@@ -6291,14 +6388,98 @@ const DATA = {
       {
         "date": "2026-07-21",
         "label": "Jul 21",
-        "spend": 28.63,
-        "impressions": 36,
-        "clicks": 6,
-        "clicksToLP": 6,
-        "ctr": 16.67,
-        "cpLPClick": 4.77,
+        "spend": 199.91,
+        "impressions": 434,
+        "clicks": 66,
+        "clicksToLP": 66,
+        "ctr": 15.21,
+        "cpLPClick": 3.03,
+        "conversions": 3.0,
+        "costPerConv": 66.64
+      },
+      {
+        "date": "2026-07-22",
+        "label": "Jul 22",
+        "spend": 131.84,
+        "impressions": 359,
+        "clicks": 49,
+        "clicksToLP": 49,
+        "ctr": 13.65,
+        "cpLPClick": 2.69,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-23",
+        "label": "Jul 23",
+        "spend": 121.11,
+        "impressions": 262,
+        "clicks": 45,
+        "clicksToLP": 45,
+        "ctr": 17.18,
+        "cpLPClick": 2.69,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-24",
+        "label": "Jul 24",
+        "spend": 66.58,
+        "impressions": 134,
+        "clicks": 33,
+        "clicksToLP": 33,
+        "ctr": 24.63,
+        "cpLPClick": 2.02,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-25",
+        "label": "Jul 25",
+        "spend": 32.43,
+        "impressions": 90,
+        "clicks": 9,
+        "clicksToLP": 9,
+        "ctr": 10.0,
+        "cpLPClick": 3.6,
+        "conversions": 1.0,
+        "costPerConv": 32.43
+      },
+      {
+        "date": "2026-07-26",
+        "label": "Jul 26",
+        "spend": 32.17,
+        "impressions": 61,
+        "clicks": 11,
+        "clicksToLP": 11,
+        "ctr": 18.03,
+        "cpLPClick": 2.92,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-27",
+        "label": "Jul 27",
+        "spend": 88.82,
+        "impressions": 288,
+        "clicks": 32,
+        "clicksToLP": 32,
+        "ctr": 11.11,
+        "cpLPClick": 2.78,
+        "conversions": 0.0,
+        "costPerConv": 0
+      },
+      {
+        "date": "2026-07-28",
+        "label": "Jul 28",
+        "spend": 31.07,
+        "impressions": 48,
+        "clicks": 8,
+        "clicksToLP": 8,
+        "ctr": 16.67,
+        "cpLPClick": 3.88,
+        "conversions": 0.0,
+        "costPerConv": 0
       }
     ],
     "weekly": [
@@ -6309,10 +6490,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-05",
@@ -6321,10 +6502,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-12",
@@ -6333,10 +6514,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-19",
@@ -6345,10 +6526,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-01-26",
@@ -6357,10 +6538,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-02",
@@ -6369,10 +6550,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-09",
@@ -6381,10 +6562,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-16",
@@ -6393,10 +6574,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-23",
@@ -6405,10 +6586,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-02",
@@ -6417,10 +6598,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-09",
@@ -6429,10 +6610,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-16",
@@ -6441,10 +6622,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-23",
@@ -6453,10 +6634,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-30",
@@ -6465,10 +6646,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-06",
@@ -6477,10 +6658,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-13",
@@ -6489,10 +6670,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-20",
@@ -6501,10 +6682,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-27",
@@ -6653,14 +6834,26 @@ const DATA = {
       {
         "date": "2026-07-20",
         "label": "Jul 20",
-        "spend": 198.31,
-        "impressions": 417,
-        "clicks": 62,
-        "clicksToLP": 62,
-        "ctr": 14.87,
-        "cpLPClick": 3.2,
-        "conversions": 3.0,
-        "costPerConv": 66.1
+        "spend": 753.72,
+        "impressions": 1721,
+        "clicks": 269,
+        "clicksToLP": 269,
+        "ctr": 15.63,
+        "cpLPClick": 2.8,
+        "conversions": 7.0,
+        "costPerConv": 107.67
+      },
+      {
+        "date": "2026-07-27",
+        "label": "Jul 27",
+        "spend": 119.89,
+        "impressions": 336,
+        "clicks": 40,
+        "clicksToLP": 40,
+        "ctr": 11.9,
+        "cpLPClick": 3.0,
+        "conversions": 0.0,
+        "costPerConv": 0
       }
     ],
     "monthly": [
@@ -6671,10 +6864,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-02-01",
@@ -6683,10 +6876,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-03-01",
@@ -6695,10 +6888,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-04-01",
@@ -6707,10 +6900,10 @@ const DATA = {
         "impressions": 0,
         "clicks": 0,
         "clicksToLP": 0,
-        "ctr": 0.0,
-        "cpLPClick": 0.0,
+        "ctr": 0,
+        "cpLPClick": 0,
         "conversions": 0.0,
-        "costPerConv": 0.0
+        "costPerConv": 0
       },
       {
         "date": "2026-05-01",
@@ -6739,14 +6932,14 @@ const DATA = {
       {
         "date": "2026-07-01",
         "label": "Jul 2026",
-        "spend": 1914.32,
-        "impressions": 4290,
-        "clicks": 672,
-        "clicksToLP": 672,
-        "ctr": 15.66,
-        "cpLPClick": 2.85,
-        "conversions": 19.0,
-        "costPerConv": 100.75
+        "spend": 2589.62,
+        "impressions": 5930,
+        "clicks": 919,
+        "clicksToLP": 919,
+        "ctr": 15.5,
+        "cpLPClick": 2.82,
+        "conversions": 23.0,
+        "costPerConv": 112.59
       }
     ]
   }
@@ -7155,6 +7348,9 @@ document.addEventListener('click', (e)=>{
   const th = e.target.closest('th[data-key]');
   if(!th) return;
 });
+
+document.getElementById('footerText').textContent =
+  `Data as of ${DATA.meta.asOf} · LinkedIn data: daily, ${DATA.meta.linkedinRealDataStart}–${DATA.meta.linkedinDateMax} · Google data: daily, ${DATA.meta.googleRealDataStart}–${DATA.meta.googleDateMax}`;
 
 renderAll();
 </script>
