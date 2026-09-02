@@ -224,14 +224,6 @@ footer b{color:#C7D4E6;}
     <div class="section-title"><span class="accent-bar"></span>Performance Trend <span class="section-sub" id="trendHint"></span></div>
     <div class="charts-grid">
       <div class="chart-card">
-        <div class="chart-head"><span class="chart-title">Conversions</span><span class="chart-hint" id="hintConv"></span></div>
-        <div class="chart-box"><canvas id="chartConv"></canvas></div>
-      </div>
-      <div class="chart-card">
-        <div class="chart-head"><span class="chart-title">Cost per Conversion</span><span class="chart-hint" id="hintCostConv"></span></div>
-        <div class="chart-box"><canvas id="chartCostConv"></canvas></div>
-      </div>
-      <div class="chart-card">
         <div class="chart-head"><span class="chart-title">Cost per LP Click</span><span class="chart-hint" id="hintCpc"></span></div>
         <div class="chart-box"><canvas id="chartCpc"></canvas></div>
       </div>
@@ -364,8 +356,6 @@ function renderKPIs(){
     {label:'Cost per LP Click', value: fmtMoney(totals.cpLPClick), sub:'spend ÷ LP clicks'},
     {label:'Impressions', value: fmtNum(totals.impressions), sub:'total ad views'},
     {label:'CTR', value: fmtPct(totals.ctr), sub:'clicks ÷ impressions'},
-    {label:'Conversions', value: fmtNum(totals.conversions), sub:'tracked conversions'},
-    {label:'Cost / Conversion', value: fmtMoney(totals.costPerConv), sub:'spend ÷ conversions'},
   ];
   grid.innerHTML = cards.map(c => `
     <div class="kpi-card">
@@ -480,7 +470,7 @@ function renderCharts(){
     const n = labels.length;
     const MAX_LABELS = 60;
     document.getElementById('trendHint').textContent = n>MAX_LABELS ? `(data labels hidden above ${MAX_LABELS} points — hover for exact values)` : '';
-    ['hintSpend','hintCpc','hintClicks','hintImpr','hintCtr','hintConv','hintCostConv'].forEach(id=>{
+    ['hintSpend','hintCpc','hintClicks','hintImpr','hintCtr'].forEach(id=>{
       document.getElementById(id).textContent = state.cohort.charAt(0).toUpperCase()+state.cohort.slice(1)+' view · LinkedIn vs Google';
     });
 
@@ -527,8 +517,6 @@ function renderCharts(){
     charts.clicks = stackedBarChart('chartClicks', 'clicksToLP', fmtNumShort);
     charts.impr = stackedBarChart('chartImpr', 'impressions', fmtNumShort);
     charts.ctr = splitLineChart('chartCtr', 'ctr', fmtPct);
-    charts.conv = stackedBarChart('chartConv', 'conversions', fmtNumShort);
-    charts.costConv = splitLineChart('chartCostConv', 'costPerConv', fmtMoneyShort, true);
     return;
   }
 
@@ -537,7 +525,7 @@ function renderCharts(){
   const n = labels.length;
   const MAX_LABELS = 60;
   document.getElementById('trendHint').textContent = n>MAX_LABELS ? `(data labels hidden above ${MAX_LABELS} points — hover for exact values)` : '';
-  ['hintSpend','hintCpc','hintClicks','hintImpr','hintCtr','hintConv','hintCostConv'].forEach(id=>{
+  ['hintSpend','hintCpc','hintClicks','hintImpr','hintCtr'].forEach(id=>{
     document.getElementById(id).textContent = state.cohort.charAt(0).toUpperCase()+state.cohort.slice(1)+' view';
   });
 
@@ -571,17 +559,6 @@ function renderCharts(){
     options: (()=>{ const o = baseOptions(n, fmtPct, {line:true}); o.plugins.datalabels.color = '#F0506E'; return o; })()
   });
 
-  charts.conv = new Chart(document.getElementById('chartConv'), {
-    type:'bar',
-    data:{ labels, datasets:[{ label:'Conversions', data: rows.map(r=>r.conversions||0), backgroundColor: '#22A97A', borderRadius:5, maxBarThickness:34 }]},
-    options: (()=>{ const o = baseOptions(n, fmtNumShort); o.plugins.datalabels.color = '#0F6B4C'; return o; })()
-  });
-
-  charts.costConv = new Chart(document.getElementById('chartCostConv'), {
-    type:'line',
-    data:{ labels, datasets:[{ label:'Cost / Conversion', data: rows.map(r=>r.costPerConv||0), borderColor:'#8B5CF6', backgroundColor:'rgba(139,92,246,0.10)', fill:true, tension:.3, pointRadius: n>40?0:3, pointBackgroundColor:'#8B5CF6', borderWidth:2.5 }]},
-    options: (()=>{ const o = baseOptions(n, fmtMoneyShort, {line:true}); o.plugins.datalabels.color = '#8B5CF6'; return o; })()
-  });
 }
 
 function renderTable(tbodyId, theadId, rows, columns){
